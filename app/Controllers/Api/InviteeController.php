@@ -71,7 +71,7 @@ class InviteeController extends Controller
             "name" => $request->name,
             "phone_number" => $phoneNumber,
             "invitation_link" => $invitation,
-            "whatsapp_link" => "http://api.whatsapp.com/send?phone=" . $phoneNumber . "&text=" . $whatsapp,
+            "whatsapp_link" => "http://api.whatsapp.com/send?text=" . $whatsapp,
         ]);
 
         return $this->json->success(
